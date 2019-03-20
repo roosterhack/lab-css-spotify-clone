@@ -1,8 +1,270 @@
-/*
-Colors:
+/* No CSS */
+:root {
+  --brand-color: #2ebc59;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+html {
+  font-size: 16px;
+}
 
-*/
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #002626;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+h2 {
+  font-size: 3.157em;
+}
+
+h3 {
+  font-size: 2.369em;
+}
+
+h4 {
+  font-size: 1.777em;
+}
+
+h5 {
+  font-size: 1.333em;
+}
+
+small,
+.text_small {
+  font-size: 0.75em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  /* 2 */
+  padding-right: 2em;
+  /* 3 */
+  padding-left: 2em;
+  /* 3 */
+}
+
+header {
+  background: #fff;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 150px;
+  height: 40px;
+  background: url("../images/spotify.svg") no-repeat center center;
+  background-size: contain;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 0.875em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #002626;
+}
+
+header nav ul li a:hover {
+  color: #ededed;
+}
+
+.header-unpin {
+  /* display: none; */
+  -webkit-transform: translateY(-65px);
+          transform: translateY(-65px);
+}
+
+.header-pin {
+  /* display: block; */
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  background: url("../images/landing.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .text-block {
+  max-width: 40em;
+}
+
+.what-you-get {
+  text-align: center;
+}
+
+.what-you-get h4 {
+  display: inline-block;
+  padding-bottom: 0.25em;
+  font-weight: bold;
+  border-bottom: 4px solid var(--brand-color);
+  margin-bottom: 3em;
+}
+
+.what-you-get ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  padding-left: 0;
+}
+
+.what-you-get li {
+  list-style: none;
+}
+
+.what-you-get li h5 {
+  margin: 0;
+  color: var(--brand-color);
+  font-weight: bold;
+}
+
+.what-you-get li .icon {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.what-you-get li .speaker {
+  background: url("../images/music-icon.png") no-repeat center center;
+  background-size: contain;
+}
+
+.what-you-get li .wave {
+  background: url("../images/high-quality-icon.png") no-repeat center center;
+  background-size: contain;
+}
+
+.what-you-get li .devices {
+  background: url("../images/devices-icon.png") no-repeat center center;
+  background-size: contain;
+}
+
+.features {
+  background: var(--brand-color);
+  padding: 2em 0;
+  margin-top: 5em;
+  color: #fff;
+}
+
+.features .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(30%, 1fr) minmax(30%, 1fr);
+      grid-template-columns: minmax(30%, 1fr) minmax(30%, 1fr);
+  grid-gap: 3em;
+}
+
+.features h4 {
+  font-weight: bold;
+  border-bottom: 5px solid #fff;
+  margin-top: 0;
+}
+
+.features ul {
+  padding-right: 6em;
+  padding-left: 0;
+}
+
+.features ul h5 {
+  font-weight: bold;
+}
+
+.features ul li {
+  list-style: none;
+}
+
+.features .feature-img {
+  width: 250px;
+  height: auto;
+  background: url("../images/spotify-app.jpg") no-repeat center center;
+  background-size: contain;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 2em;
+}
+
+@media (max-width: 630px) {
+  header nav {
+    display: none;
+  }
+  header .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+  }
+  .what-you-get ul {
+    display: inline-block;
+  }
+  .features .container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: minmax(30%, 1fr) minmax(30%, 1fr);
+        grid-template-rows: minmax(30%, 1fr) minmax(30%, 1fr);
+    grid-gap: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
